@@ -31,5 +31,25 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "AddressBook": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Entry": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Phone": {
+    "dataSource": "db",
+    "public": true
+  },
+  "EmailAddress": {
+    "dataSource": "db",
+    "public": true
   }
 }

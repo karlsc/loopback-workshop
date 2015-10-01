@@ -1,0 +1,42 @@
+{
+  "name": "Entry",
+  "plural": "Entries",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "birthday": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "addresses": {
+      "type": "hasMany",
+      "model": "Address",
+      "foreignKey": ""
+    },
+    "phones": {
+      "type": "hasMany",
+      "model": "Phone",
+      "foreignKey": ""
+    },
+    "emailAddresses": {
+      "type": "hasMany",
+      "model": "EmailAddress",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
